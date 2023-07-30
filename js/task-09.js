@@ -13,6 +13,7 @@ function getRandomHexColor() {
 elements.btn.addEventListener("click", changeColor);
 
 function changeColor(evt) {
-  elements.body.style.backgroundColor = getRandomHexColor();
-  elements.color.textContent = getRandomHexColor();
+  let colorHex = getRandomHexColor();
+  elements.body.style.backgroundColor = colorHex;
+  elements.color.textContent = colorHex;
 }

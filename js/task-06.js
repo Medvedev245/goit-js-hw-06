@@ -10,6 +10,7 @@ function handlerSearch(evt) {
   if (
     evt.currentTarget.value.length === Number(evt.currentTarget.dataset.length)
   ) {
+    evt.currentTarget.classList.remove("invalid");
     evt.currentTarget.classList.add("valid");
   } else {
     evt.currentTarget.classList.add("invalid");
