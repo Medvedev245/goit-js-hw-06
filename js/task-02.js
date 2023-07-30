@@ -9,16 +9,13 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-ingredients.map((el) => {
+const markup = ingredients.map((el) => {
   const li = document.createElement("li");
   li.classList.add("item");
   li.textContent = el;
-  console.log(li);
-  list.append(li);
+  return li;
 });
+list.append(...markup);
 
+console.log(markup);
 console.log(list);
-
-// На кожній ітераціі додаю лішку в ДОМ. Здається
-// потрібно додати кудись, а тотім додати в дом.
-// але мізків не вистачає )
